@@ -31,7 +31,7 @@ namespace Monogame.TextureAtlas
                 Point size = new Point(input.ReadInt32(), input.ReadInt32());
                 Rectangle source = new Rectangle(x, y, w, h);
 
-                var region = a.Regions?.FirstOrDefault(f => f.Name.Equals(name)) ?? new Sprite { Name = name };
+                var region = a.Sprites?.FirstOrDefault(f => f.Name.Equals(name)) ?? new Sprite { Name = name };
 
                 region.Source = source;
                 region.Offset = offset;
@@ -40,7 +40,7 @@ namespace Monogame.TextureAtlas
                 regions[i] = region;
             }
 
-            a.Regions = regions;
+            a.Sprites = regions;
 
             return a;
         }

@@ -20,6 +20,6 @@ namespace Monogame.TextureAtlas
     public class TextureAtlas
     {
         public Texture2D Texture { get; internal set; }
-        public Sprite[] Regions { get; internal set; }
+        public Sprite[] Sprites { get; internal set; }
     }
 }
