@@ -1,7 +1,7 @@
 # Monogame.TextureAtlas
 
 This monogame pipeline extension packs png files into a texture atlas. 
-The packing code was taken from https://spritesheetpacker.codeplex.com/
+The packing code was taken from the nuclex framework http://nuclexframework.codeplex.com/
 
 ## Usage
 
@@ -9,7 +9,7 @@ The packing code was taken from https://spritesheetpacker.codeplex.com/
 2. Create a text file with `.atlas` extension, this is used to specify a list of target folders containing the pngs. One subfolder per line, currently absolute paths not supported, just use `myimagefolder` or `myimagefolder/myothersubfolder`
 3. From the pipeline tool, add the `.atlas` to your mgcb, and configure just like a regular texture. Build
 
-4. In your C# Monogame project add a reference to `Monogame.TextureAtlas' and load the atlas using the `ContentManager`:
+4. In your C# Monogame project add a reference to `Monogame.TextureAtlas` and load the atlas using the `ContentManager`:
 ```csharp
 var myAtlas = Content.Load<TextureAtlas>("myatlas");
 //then retrieves the sprites
