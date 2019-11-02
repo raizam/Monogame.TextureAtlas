@@ -234,7 +234,7 @@ namespace sspack
                         for (int y = 0; y < imgw.Height; y++)
                         {
                             if (imgw.GetPixel(x, y).A != 0)
-                                return Math.Min(x + 1, imgw.Width - 1);
+                                return Math.Min(x + 1, imgw.Width);
                         }
 
                     throw new Exception();
@@ -247,7 +247,7 @@ namespace sspack
 
                         {
                             if (imgw.GetPixel(x, y).A != 0)
-                                return Math.Min(y + 1, imgw.Height - 1);
+                                return Math.Min(y + 1, imgw.Height);
                         }
 
                     throw new Exception();
